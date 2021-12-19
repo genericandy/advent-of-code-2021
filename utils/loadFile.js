@@ -6,7 +6,7 @@ const loadFile = (file, options) => {
         const arr = data.split(options.split)
 
         if (options.as === Number) {
-            return arr.map(val => +val)
+            return arr.map(Number)
         }
 
         return arr

@@ -3,11 +3,11 @@ const loadFile = require('../utils/loadFile')
 const src = './data.txt'
 const data = loadFile(src, { split: /\r\n\r\n/ })
 
-const numbers = data.shift().split(',').map(n => +n)
+const numbers = data.shift().split(',').map(Number)
 
 const cards = data.map(
     card => {
-        const rows = card.split(/\r\n/).map(row => row.trim().split(/\s+/).map(n => +n))
+        const rows = card.split(/\r\n/).map(row => row.trim().split(/\s+/).map(Number))
         const cols = rows[0].map( 
             (_, i) => rows.map(
                 row => row[i]

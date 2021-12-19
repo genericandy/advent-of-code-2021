@@ -12,7 +12,7 @@ const commands = data.map(
 )
 
 const position = commands.reduce(
-    ({ d, h }, [dir, distance]) => {
+    ({ h, d }, [dir, distance]) => {
         if (dir === 'forward') {
             h = distance + h
         } else {

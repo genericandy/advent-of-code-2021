@@ -4,7 +4,7 @@ const src = './data.txt'
 const data = loadFile(src, { split: /\r\n/ })
 
 const lines = data.map( line => {
-   const [ x1, y1, x2, y2 ] = line.match(/\d+/g).map(n => +n)
+   const [ x1, y1, x2, y2 ] = line.match(/\d+/g).map(Number)
    return {
        x1, x2, y1, y2,
        xD: Math.min(1, Math.max(-1, x2 - x1)),
