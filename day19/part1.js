@@ -1,5 +1,3 @@
-const { match } = require("assert")
-const stringify = require("json-stringify-pretty-compact")
 const loadFile = require('../utils/loadFile')
 // const src = './sampledata2.txt'
 const src = './data.txt'

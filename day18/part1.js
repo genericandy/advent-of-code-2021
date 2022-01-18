@@ -1,5 +1,4 @@
 const stringify = require("json-stringify-pretty-compact")
-const { threadId } = require("worker_threads")
 const loadFile = require('../utils/loadFile')
 // const src = './sampledata2.txt'
 const src = './data.txt'
